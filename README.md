@@ -1,2 +1,4 @@
 # Auxiliatrium
-A virtual assistant that works in discord made with dialogflow
+### This isn't complete. Right now I can't test to see if it works.
+
+##### dont take this seriously ;-;

@@ -1,4 +1,3 @@
 # Auxiliatrium
-### This isn't complete. Right now I can't test to see if it works.
-
-##### dont take this seriously ;-;
+### An incomplete project
+##### nothing to see for now

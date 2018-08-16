@@ -2,19 +2,9 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
-    <script type="text/javascript" src="scripts/dragndrop.js></script>
     <title>Auxiliatrium</title>
 </head>
-<body ondragover="drag_over(event)" ondrop="drop(event)">
-    <script>
-        var dm = document.getElementById('dragme');
-	dm.addEventListener('dragstart',drag_start,false);
-	document.body.addEventListener('dragover',drag_over,false);
-	document.body.addEventListener('drop',drop,false);
-    </script>
-   <ul>
-       <li id="txt1" draggable="true" ondragstart="drag_start(event)"> Drag this text </li><br>
-       <li id="txt2" draggable="true" ondragstart="drag_start(event)"> Drag me too</li>
-  </ul>
+<body>
+    <h1 class="fadeIn" style="font-size:100px; text-align:center">Auxilatrium</h1>
 </body>
 </html>

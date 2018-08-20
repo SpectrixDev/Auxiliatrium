@@ -1,3 +1,3 @@
 # Auxiliatrium
-### An incomplete project
-##### nothing to see for now
+### A custom home page for your browser
+##### work in progress ;)

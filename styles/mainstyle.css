@@ -4,5 +4,48 @@ body{
     color: white;
     font-size: 24px;
     font-family: 'Anonymous Pro', monospace;
-    background-color: #36393E;
+    background-color: black
+}
+
+input{
+    font-size:32pt;
+}
+
+#textbox{
+    width: 750px;
+    border: 0;
+    height: 35px;
+    padding-left: .5em;
+    color: #E4E2E2;
+    font-size: 1em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(20, 20, 20, 0.75);
+    font-weight: 300;
+}
+
+a {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    margin: 20px auto;
+    max-width: 90px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+a.button {
+    color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }

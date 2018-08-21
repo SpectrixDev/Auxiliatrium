@@ -1,11 +1,16 @@
-function searchYouTube(){
-    if (event.keyCode == 13 || event.which == 13) { location='http://www.youtube.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}
+var getLocation = "https://www.google.com/search?q="
+
+function yt(){
+    getLocation = 'https://www.youtube.com/search?q=';
+    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }
 
-function searchGoogle(){
-    if (event.keyCode == 13 || event.which == 13) { location='http://www.youtube.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}
+function google(){
+    getLocation = 'https://www.google.com/search?q=';
+    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }
 
-function searchGitHub(){
-    if (event.keyCode == 13 || event.which == 13) { location='http://www.youtube.com/search?q=' + encodeURIComponent(document.getElementById('textbox').value);}
+function gitH(){
+    getLocation = 'https://www.github.com/search?q=';
+    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }

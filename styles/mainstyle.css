@@ -54,9 +54,47 @@ button.buttonstyle {
 
 button.buttonstyle:hover {
     color: rgba(255, 255, 255, 0.85);
-    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+    box-shadow: rgba(255, 255, 255, 0.26) 0 0px 0px 40px inset;
 }
 
 button:focus {
     outline:none;
+}
+
+#clock {
+    font-family: 'Anonymous Pro', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(10, 175, 230, 0);
+    font-size: 50px;
+}
+    
+.time {
+        letter-spacing: 0.05em;
+        font-size: 100px;
+        padding: 5px 0;
+}
+    
+.text {
+        letter-spacing: 0.1em;
+        font-size: 2    2px;
+        padding: 20px 0 0;
+    }
+
+#greetingMsg {
+    font-family: 'Anonymous Pro', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 77.5%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(10, 175, 230, 0);
+    font-size: 25px;
 }

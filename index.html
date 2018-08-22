@@ -7,15 +7,18 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <title>Auxiliatrium</title>
 </head>
-<body>
-    <img src="img/AuxiliatriumLogoOnly.png" alt="Auxiliatrium" class="animated fadeIn delay-1s" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
+<body onload="startTime()">
+    <img src="img/AuxiliatriumLogoOnly.png" alt="Auxiliatrium" class="animated fadeIn" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
 
-    <input class="animated fadeIn delay-1s" id="textbox" type="text" placeholder="Search...">
+    <input class="animated fadeIn" id="textbox" type="text" placeholder="Search...">
 
-    <p align=center class="animated fadeIn delay-1s">
+    <p align=center class="animated fadeIn">
         <button class="buttonstyle" onclick="yt()">YouTube</button>
         <button class="buttonstyle" onclick="google()">Google</button>
         <button class="buttonstyle" onclick="gitH()">GitHub</button>
     </p>
+
+    <div id="clock" class="animated fadeIn"></div>
+    <div id="greetingMsg" class="animated fadeIn"></div>
 </body>
 </html>

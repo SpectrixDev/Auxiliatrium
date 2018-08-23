@@ -4,7 +4,8 @@ body{
     color: white;
     font-size: 24px;
     font-family: 'Anonymous Pro', monospace;
-    background-color: black
+    background-color: black;
+    text-align: center;
 }
 
 #textbox{
@@ -44,7 +45,7 @@ button {
     padding: 10px 10px;
     display: inline-block;
     background-color: rgba(20, 20, 20, 0.75);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 button.buttonstyle {
@@ -62,12 +63,10 @@ button:focus {
 }
 
 #clock {
-    font-family: 'Anonymous Pro', monospace;
-    color: #ffffff;
     text-align: center;
     color: #daf6ff;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(10, 175, 230, 0);
-    font-size: 50px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),  0 0 20px rgba(10, 175, 230, 0);
+    font-size: 30px;
 }
     
 .time {
@@ -83,10 +82,8 @@ button:focus {
     }
 
 #greetingMsg {
-    font-family: 'Anonymous Pro', monospace;
-    color: #ffffff;
     text-align: center;
     color: #daf6ff;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(10, 175, 230, 0);
-    font-size: 25px;
+    font-size: 35px;
 }

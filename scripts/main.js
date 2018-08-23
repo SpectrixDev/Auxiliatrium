@@ -1,18 +1,50 @@
 var getLocation = "https://www.google.com/search?q="
 
-function yt(){
-    getLocation = 'https://www.youtube.com/search?q=';
+function search(getLocation){
     location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
 }
 
-function google(){
-    getLocation = 'https://www.google.com/search?q=';
-    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
+function reddit(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://www.reddit.com/"
+    }
+    else if (txtBoxInput.substring(0, 2) == "r/") {
+        location = "https://www.reddit.com/" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+    else {
+        location = "https://www.reddit.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
 }
 
-function gitH(){
-    getLocation = 'https://www.github.com/search?q=';
-    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
+function stackoverflow(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://stackoverflow.com/";
+    }
+    else {
+        location = "https://stackoverflow.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function gmail(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://mail.google.com/mail/u/0/#inbox";
+    }
+    else {
+        location = "https://mail.google.com/mail/u/0/#search/" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function twitter(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://twitter.com/";
+    }
+    else {
+        location = "https://twitter.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
 }
 
 
@@ -26,7 +58,7 @@ function startTime() {
     else if(h >= 12 && h < 17) {
         greeting = "Good afternoon.";
     }
-    else{
+    else {
         greeting = "Good evening.";
     }
 

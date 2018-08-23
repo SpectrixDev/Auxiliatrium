@@ -7,18 +7,25 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <title>Auxiliatrium</title>
 </head>
-<body onload="startTime()">
+<body onload=startTime()>
     <img src="img/AuxiliatriumLogoOnly.png" alt="Auxiliatrium" class="animated fadeIn" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
 
-    <input class="animated fadeIn" id="textbox" type="text" placeholder="Search...">
+    <input autocomplete="off" class="animated fadeIn" id="textbox" type="text" placeholder="Search...">
 
-    <p align=center class="animated fadeIn">
-        <button class="buttonstyle" onclick="yt()">YouTube</button>
-        <button class="buttonstyle" onclick="google()">Google</button>
-        <button class="buttonstyle" onclick="gitH()">GitHub</button>
-    </p>
+    <br /><div class="animated fadeIn">
+        <button class="buttonstyle" onclick="search('https://www.youtube.com/search?q=')">YouTube</button>
+        <button class="buttonstyle" onclick="search('https://www.github.com/search?q=')">GitHub</button>
+        <button class="buttonstyle" onclick=reddit()>Reddit</button>
+        <button class="buttonstyle" onclick="search('https://www.google.com/search?q=')">Google</button>
+        <button class="buttonstyle" onclick=stackoverflow()> StackOverflow</button>
+        <button class="buttonstyle" onclick=gmail()>Gmail</button>
+        <button class="buttonstyle" onclick=twitter()>Twitter</button>
+    </div>
 
-    <div align=center id="clock" class="animated fadeIn"></div>
-    <div align=center id="greetingMsg" class="animated fadeIn"></div>
+    <p id="greetingMsg" class="animated fadeIn"></p>
+    <p id="clock" class="animated fadeIn"></p>
+    
+
+
 </body>
 </html>

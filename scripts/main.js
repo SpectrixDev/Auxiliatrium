@@ -10,7 +10,7 @@ function reddit(){
         location = "https://www.reddit.com/"
     }
     else if (txtBoxInput.substring(0, 2) == "r/") {
-        location = "https://www.reddit.com/" + encodeURIComponent(document.getElementById('textbox').value);
+        location = "https://www.reddit.com/" + document.getElementById('textbox').value;
     }
     else {
         location = "https://www.reddit.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);

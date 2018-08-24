@@ -47,6 +47,15 @@ function twitter(){
     }
 }
 
+function github(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://github.com/";
+    }
+    else {
+        location = "https://github.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
 
 function startTime() {
     var today = new Date();

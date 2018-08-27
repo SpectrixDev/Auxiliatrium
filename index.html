@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="img/AuxiliatriumLogoOnly.png">
-    <link rel="stylesheet" type="text/css" href="styles/mainstyle.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <script type="text/javascript" src="scripts/main.js"></script>
     <!-- https://github.com/SpectrixOfficial/Auxiliatrium By Spectrix-->
     <title>Auxiliatrium</title>
 </head>
-<body onload=startTime()>
-    <img src="img/AuxiliatriumLogoOnly.png" alt="Auxiliatrium" class="animated fadeIn" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
+<body onload = "start()">
+    <img src="img/logo.png" alt="Auxiliatrium" class="animated fadeIn" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
 
     <input autocomplete="off" class="animated fadeIn" id="textbox" type="text" placeholder="Search...">
 
-    <br /><div class="animated fadeIn">
-        <button class="buttonstyle" onclick="search('https://www.youtube.com/search?q=')">YouTube</button>
-        <button class="buttonstyle" onclick=github()>GitHub</button>
-        <button class="buttonstyle" onclick=reddit()>Reddit</button>
-        <button class="buttonstyle" onclick="search('https://www.google.com/search?q=')">Google</button>
-        <button class="buttonstyle" onclick=stackoverflow()>StackOverflow</button>
-        <button class="buttonstyle" onclick=gmail()>Gmail</button>
-        <button class="buttonstyle" onclick=twitter()>Twitter</button>
+    <br/>
+    
+    <div class="animated fadeIn" id="buttons">
+
     </div>
 
     <p id="greetingMsg" class="animated fadeIn"></p>

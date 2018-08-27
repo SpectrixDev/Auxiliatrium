@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  color: white;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+#textbox {
+  width: 700px;
+  border: 0;
+  height: 35px;
+  padding-left: .5em;
+  color: #E4E2E2;
+  font-size: 1em;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(20, 20, 20, 0.75);
+  font-weight: 300;
+  padding: 5px 25px;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  margin: 20px auto;
+  max-width: 90px auto;
+  text-decoration: none;
+  border-style: solid;
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: rgba(20, 20, 20, 0.75);
+  font-size: 18px;
+  &.buttonstyle {
+    color: white;
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    &:hover {
+      color: rgba(255, 255, 255, 0.85);
+      box-shadow: rgba(255, 255, 255, 0.26) 0 0px 0px 40px inset;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+#clock {
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 20px rgba(10, 175, 230, 0);
+  font-size: 30px;
+}
+
+.time {
+  letter-spacing: 0.05em;
+  font-size: 100px;
+  padding: 5px 0;
+}
+
+.text {
+  letter-spacing: 0.1em;
+  font-size: 2    2px;
+  padding: 20px 0 0;
+}
+
+#greetingMsg {
+  text-align: center;
+  color: #daf6ff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(10, 175, 230, 0);
+  font-size: 35px;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}

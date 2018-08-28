@@ -41,7 +41,7 @@ button {
     margin: 20px auto;
     max-width: 90px auto;
     text-decoration: none;
-    border-radius: 25px
+    border-radius: 25px;
     padding: 10px 10px;
     display: inline-block;
     background-color: rgba(20, 20, 20, 0.75);

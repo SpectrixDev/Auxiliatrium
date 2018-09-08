@@ -89,6 +89,7 @@ button:focus {
 }
 
 img {
+    margin-top: 40px;
     user-drag: none; 
     user-select: none;
     -moz-user-select: none;

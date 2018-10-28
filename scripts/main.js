@@ -17,16 +17,6 @@ function reddit(){
     }
 }
 
-function stackoverflow(){
-    var txtBoxInput = document.getElementById('textbox').value
-    if (txtBoxInput == '' || txtBoxInput == ' ') {
-        location = "https://stackoverflow.com/";
-    }
-    else {
-        location = "https://stackoverflow.com/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
-    }
-}
-
 function gmail(){
     var txtBoxInput = document.getElementById('textbox').value
     if (txtBoxInput == '' || txtBoxInput == ' ') {

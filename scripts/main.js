@@ -47,6 +47,16 @@ function github(){
     }
 }
 
+function youtube(){ // Thanks to a new update from YouTube I now have to include this
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://youtube.com/";
+    }
+    else {
+        location = "https://www.youtube.com/results?search_query=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
 function startTime() {
     var today = new Date();
     var greeting;

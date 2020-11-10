@@ -1,7 +1,7 @@
-var getLocation = "https://www.google.com/search?q="
+var getLocation = "https://duckduckgo.com/?q="
 
 function search(getLocation){
-    location = getLocation + encodeURIComponent(document.getElementById('textbox').value);
+    location = getLocation + encodeURIComponent(document.getElementById('textbox').value) + '&ia=web';
 }
 
 function reddit(){

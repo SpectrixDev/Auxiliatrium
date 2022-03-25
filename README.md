@@ -1,35 +1,46 @@
-# Auxiliatrium
-### A custom home page for your browser. Made intentionally for minimalists
+# Getting Started with Create React App
 
-> **Preview: https://spectrixdev.github.io/Auxiliatrium/**
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setting up
-Depending on your web browser, the set up wil be slightly different. But it should be pretty much the same
+## Available Scripts
 
-Go to your browsers **settings** and set the startup page, home page and [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Auxiliatrium's website](https://spectrixdev.github.io/Auxiliatrium/)
+In the project directory, you can run:
 
-After that, you're all ready!
+### `npm start`
 
-## Tips:
-> You can click a button without searching for anything and it will take you to that website's homepage
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-> In the Reddit search, you can do r/{subreddit name here} to go to the desired subreddit
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Installing the repo locally (unrecommended)
-Clone/install the repo
+### `npm test`
 
-```bash
-git clone https://github.com/SpectrixDev/Auxiliatrium.git
-```
-or click [here](https://github.com/SpectrixDev/Auxiliatrium/archive/master.zip) to download without using git
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Now you can follow the **Setting up** steps and change the url to the location of the index.html file on your compute
+### `npm run build`
 
-## Checking for updates
-Do the following: ```bash
-git pull origin master```
-(make sure you've ```cd```'d into the directory)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-or just redownload it
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-###### pls star the repo b0ss
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

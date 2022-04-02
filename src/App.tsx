@@ -16,18 +16,21 @@ function App() {
             </div>
           </div>
             <br />
-            <button className="expanderButton">^</button>
-            <br />
-            <div className="buttons">
-              <div className="animate__animated animate__fadeInUp">
-                <button>YouTube</button>
-                <button>GitHub</button>
-                <button>Gcal</button>
-                <button>Gmail</button>
-                <button>Gmaps</button>
-                <button>Twitter</button>
-              </div>
-          </div>
+            <div className="animate__animated animate__fadeInUp">
+              <button className="buttons">YouTube</button>
+              <button className="buttons">GitHub</button>
+              <button className="buttons">Gcal</button>
+              <button className="buttons">Gmail</button>
+              <button className="buttons">Gmaps</button>
+              <button className="buttons">Twitter</button>
+            </div>
+            <div className="secondRowButtons">
+              <button className="buttons">Reddit</button>
+              <button className="buttons">Last.fm</button>
+              <button className="buttons">test</button>
+              <button className="buttons">test</button>
+              <button className="buttons">test</button>
+            </div>
     </div>
   );
 }

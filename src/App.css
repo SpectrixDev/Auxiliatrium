@@ -45,14 +45,8 @@ body {
   border-color: rgba(255, 255, 255, 0.781);
 }
 
-.buttons:hover {
-  border: 2px solid #ffffff;
-  transition: calc(0.2s + 0.1s);
-  border-radius: 25%;
-}
-
 .buttons {
-  transition: calc(0.2s + 0.1s);
+  transition: 0.3s;
   display: block;
   margin: 20px auto;
   margin-left: 10px;
@@ -68,8 +62,32 @@ body {
     0px 2px 10px 0px black;
 }
 
+.buttons:hover {
+  border: 2px solid #ffffff;
+  transition: 0.3s;
+  border-radius: 25%;
+}
+
+.buttons:active {
+  border: 2px solid #73d7ff;
+  transition: 0.2s;
+  border-radius: 35%;
+  background-color:rgba(160, 160, 160, 0.233);
+  font-size: 16px;
+
+}
 .secondRowButtons {
   margin-top: -30px;
   animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.homeButton {
+  border-radius: 25%;
+}
+
+#home {
+  border-radius: 5%;
+  background-color: black;
+  transition: 0.3s;
 }

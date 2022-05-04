@@ -10,18 +10,32 @@
     <title>Auxiliatrium</title>
 </head>
 <body onload=startTime()>
-    <img src="img/AuxiliatriumLogoOnly.png" alt="Auxiliatrium" class="animated fadeIn" style="width:300px;height:300px; display: block; margin-right: auto; margin-left: auto;">
-
-    <input autocomplete="off" class="animated fadeIn" id="textbox" type="text" placeholder="Search..." onkeydown="if (event.keyCode == 13 || event.which == 13) { location = getLocation + encodeURIComponent(document.getElementById('textbox').value);}" />
-
-    <br /><div class="animated fadeIn">
-        <button class="buttonstyle" onclick=youtube()>YouTube</button>
-        <button class="buttonstyle" onclick=github()>GitHub</button>
-        <button class="buttonstyle" onclick=reddit()>Reddit</button>
-        <button class="buttonstyle" onclick="search('https://www.google.com/search?q=')">Google</button>
-        <button class="buttonstyle" onclick=gmail()>Gmail</button>
-        <button class="buttonstyle" onclick=twitter()>Twitter</button>
-    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <div class="animate__animated animate__fadeIn">
+      <header class="header">
+        <img draggable="false" src=img/Auxiliatrium.png class="logo" alt="logo" />
+      </header>
+        <div class="searchArea">
+          <input class="search" id="textbox" type="text" placeholder="Search..." />
+          </div>
+        </div>
+          <br />
+          <div class="animate__animated animate__fadeInUp">
+            <button class="buttons" onclick="youtube()">YouTube</button>
+            <button class="buttons" onclick="github()">GitHub</button>
+            <button class="buttons" onclick="gcal()">Gcal</button>
+            <button class="buttons" onclick="gmail()">Gmail</button>
+            <button class="buttons" onclick="gmaps()">Gmaps</button>
+            <button class="buttons" onclick="twitter()">Twitter</button>
+          </div>
+          <div class="secondRowButtons">
+            <button class="buttons" onclick="reddit()">Reddit</button>
+            <button class="buttons" onclick="lastfm()">Last.fm</button>
+            <button class="buttons" onclick="twitch()">Twitch</button>
+            <button class="buttons">test</button>
+            <button class="buttons">test</button>
+          </div>
+          <button class="buttons" id="home">Home</button>
 
     <p id="greetingMsg" class="animated fadeIn"></p>
     <p id="clock" class="animated fadeIn"></p>

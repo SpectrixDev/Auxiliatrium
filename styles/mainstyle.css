@@ -1,99 +1,90 @@
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-body{
-    color: white;
-    font-size: 24px;
-    font-family: 'Anonymous Pro', monospace;
-    background-color: black;
+body {
     text-align: center;
-}
-
-#textbox{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color-scheme: dark !important;
+  }
+  
+  .header {
+    padding-top: 50px;
+    background-color: black;
+  }
+  
+  .logo {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .link {
+    color: #f7dcff;
+    text-decoration: none;
+  }
+  
+  .searchArea{
+    padding-top: 50px;
+  }
+  
+  .search {
+    background-color: #121212;
+    font-size: 20px;
     width: 700px;
-    border: 0;
-    height: 35px;
-    padding-left: .5em;
-    color: #E4E2E2;
-    font-size: 1em;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(20, 20, 20, 0.75);
-    font-weight: 300;
+    height: 30px;
+    border: 1px solid rgba(61, 61, 61, 0.233);
+    transition: all 0.2s ease-in-out;
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 5px 15px;
+  }
+  
+  .search:focus {
+    outline: none;
     border-radius: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#textbox:focus {
-    outline:none;
-}
-
-button {
-    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    border-color: rgba(255, 255, 255, 0.781);
+  }
+  
+  .buttons {
+    transition: 0.3s;
     display: block;
     margin: 20px auto;
+    margin-left: 10px;
     max-width: 90px auto;
     text-decoration: none;
     border-radius: 10px;
     padding: 10px 10px;
     display: inline-block;
-    background-color: rgba(20, 20, 20, 0.75);
     font-size: 18px;
-}
-
-button.buttonstyle {
-    color: white;
-    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
-}
-
-button.buttonstyle:hover {
-    color: rgba(255, 255, 255, 0.85);
-    box-shadow: rgba(255, 255, 255, 0.26) 0 0px 0px 40px inset;
-}
-
-button:focus {
-    outline:none;
-}
-
-#clock {
-    text-align: center;
-    color: #daf6ff;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.6),  0 0 20px rgba(10, 175, 230, 0);
-    font-size: 30px;
-}
-    
-.time {
-        letter-spacing: 0.05em;
-        font-size: 100px;
-        padding: 5px 0;
-}
-    
-.text {
-        letter-spacing: 0.1em;
-        font-size: 2    2px;
-        padding: 20px 0 0;
-    }
-
-#greetingMsg {
-    text-align: center;
-    color: #daf6ff;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5),  0 0 20px rgba(10, 175, 230, 0);
-    font-size: 35px;
-}
-
-img {
-    margin-top: 40px;
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
+    border: 2px solid #fc868600;
+    background-color: #121212;
+    box-shadow: 0px 2px 5px 0px black,
+      0px 2px 10px 0px black;
+  }
+  
+  .buttons:hover {
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+    border-radius: 25%;
+  }
+  
+  .buttons:active {
+    border: 2px solid #73d7ff;
+    transition: 0.2s;
+    border-radius: 35%;
+    background-color:rgba(160, 160, 160, 0.233);
+    font-size: 16px;
+  
+  }
+  .secondRowButtons {
+    margin-top: -30px;
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+  
+  .homeButton {
+    border-radius: 25%;
+  }
+  
+  #home {
+    border-radius: 5%;
+    background-color: black;
+    transition: 0.3s;
+  }

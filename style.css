@@ -1,10 +1,20 @@
 body {
     text-align: center;
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: monospace;
     color-scheme: dark !important;
+    color: rgb(169, 169, 169);
+    font-size: 26px;
   }
   
+  .notselectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+  }
+
   .header {
     padding-top: 50px;
     background-color: black;
@@ -13,6 +23,12 @@ body {
   .logo {
     height: 250px;
     width: 250px;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
   }
   
   .link {
@@ -75,12 +91,8 @@ body {
   }
   .secondRowButtons {
     margin-top: -30px;
-    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
-  }
-  
-  .homeButton {
-    border-radius: 25%;
+    animation: fadeInUp; 
+    animation-duration: 2s; 
   }
   
   #home {

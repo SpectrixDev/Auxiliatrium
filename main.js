@@ -1,4 +1,8 @@
-var getLocation = "https://duckduckgo.com/?q="
+// Disclaimer: This code is not exactly very pretty, optimized or thought through much. I was gonna do this in react with typescript but
+// it seemed kinda overkill for such a simple program. It was just a quick add on to a project I started when I was 14 xD
+// but it is small, compact and gets the job done
+
+var getLocation = "https://google.com/search?q=";
 
 function search(getLocation){
     location = getLocation + encodeURIComponent(document.getElementById('textbox').value) + '&ia=web';
@@ -57,6 +61,71 @@ function youtube(){ // Thanks to a new update from YouTube I now have to include
     }
 }
 
+function gcal(){
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://calendar.google.com/calendar/u/0/r";
+    }
+    else {
+        location = "https://calendar.google.com/calendar/u/0/r/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function gmaps() {
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://maps.google.com/";
+    }
+    else {
+        location = "https://maps.google.com/maps?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function lastfm() {
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://www.last.fm/";
+    }
+    else {
+        location = "https://www.last.fm/search?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function twitch() {
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://twitch.tv/";
+    }
+    else {
+        location = "https://www.twitch.tv/search?term=" + document.getElementById('textbox').value;
+    }
+}
+
+function weather() {
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://accuweather.com/";
+    }
+    else {
+        location = "https://www.accuweather.com/en/search-locations?query=" + encodeURIComponent(document.getElementById('textbox').value);
+}
+}
+
+function gsheets() {
+    var txtBoxInput = document.getElementById('textbox').value
+    if (txtBoxInput == '' || txtBoxInput == ' ') {
+        location = "https://docs.google.com/spreadsheets/u/0/"
+    }
+    else {
+        location = "https://docs.google.com/spreadsheets/u/0/?q=" + encodeURIComponent(document.getElementById('textbox').value);
+    }
+}
+
+function home()
+{
+    location = "https://spectrixdev.github.io/";
+}
+
 function startTime() {
     var today = new Date();
     var greeting;
@@ -81,6 +150,7 @@ function startTime() {
     var t = setTimeout(startTime, 500);
 
 }
+
 function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;

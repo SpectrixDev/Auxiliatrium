@@ -100,3 +100,23 @@ body {
     background-color: black;
     transition: 0.3s;
   }
+
+  .ai-button {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(61, 61, 61, 0.233);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.ai-button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.781);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

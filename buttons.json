@@ -1,0 +1,57 @@
+[
+    {
+      "name": "YouTube",
+      "link": "https://youtube.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "GitHub",
+      "link": "https://github.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "Gcal",
+      "link": "https://calendar.google.com/calendar/u/0/r",
+      "allowQuery": false
+    },
+    {
+      "name": "Gmail",
+      "link": "https://mail.google.com/mail/u/0/#inbox",
+      "allowQuery": true
+    },
+    {
+      "name": "Gmaps",
+      "link": "https://maps.google.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "Reddit",
+      "link": "https://www.reddit.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "Last.fm",
+      "link": "https://www.last.fm/",
+      "allowQuery": true
+    },
+    {
+      "name": "ChatGPT",
+      "link": "https://chat.openai.com/",
+      "allowQuery": false
+    },
+    {
+      "name": "Weather",
+      "link": "https://accuweather.com/",
+      "allowQuery": true
+    },
+    {
+      "name": "Hugging Chat",
+      "link": "https://huggingface.co/chat",
+      "allowQuery": false
+    }
+  ]

@@ -4,6 +4,7 @@
     <link rel="icon" type="image/png" href="img/Auxiliatrium.png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script type="text/javascript" src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://github.com/SpectrixDev/Auxiliatrium By Spectrix-->
@@ -13,34 +14,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <div class="animate__animated animate__fadeIn">
       <header class="header">
-        <img src=img/Auxiliatrium.png class="logo" alt="logo" id="logolmao"/>
+        <img src="img/Auxiliatrium.png" class="logo" alt="logo" id="logolmao"/>
       </header>
         <div class="searchArea">
-          <input class="search" onsubmit="search()" id="textbox" type="text" placeholder="Search..." onkeydown="if (event.keyCode == 13 || event.which == 13) { location = getLocation + encodeURIComponent(document.getElementById('textbox').value);}"/>
-          </div>
+          <input class="search" id="textbox" type="text" placeholder="Search..." onkeydown="if (event.keyCode == 13 || event.which == 13) { performSearch(); }"/>
+          <button class="ai-button" onclick="performSearch('duckduckgoAI')"><i class="fas fa-robot"></i></button>
         </div>
         <div class="notselectable">
           <br />
           <div class="animate__animated animate__fadeInUp">
-            <button class="buttons" onclick="youtube()">YouTube</button>
-            <button class="buttons" onclick="github()">GitHub</button>
-            <button class="buttons" onclick="gcal()">Gcal</button>
-            <button class="buttons" onclick="gmail()">Gmail</button>
-            <button class="buttons" onclick="gmaps()">Gmaps</button>
-            <button class="buttons" onclick="twitter()">Twitter</button>
+            <button class="buttons" onclick="performSearch('youtube')">YouTube</button>
+            <button class="buttons" onclick="performSearch('github')">GitHub</button>
+            <button class="buttons" onclick="performSearch('gcal')">Gcal</button>
+            <button class="buttons" onclick="performSearch('gmail')">Gmail</button>
+            <button class="buttons" onclick="performSearch('gmaps')">Gmaps</button>
+            <button class="buttons" onclick="performSearch('twitter')">Twitter</button>
           </div>
           <div class="secondRowButtons">
-            <button class="buttons" onclick="reddit()">Reddit</button>
-            <button class="buttons" onclick="lastfm()">Last.fm</button>
-            <button class="buttons" onclick="twitch()">Twitch</button>
-            <button class="buttons" onclick="weather()">Weather</button>
-            <button class="buttons" onclick="gsheets()">Gsheets</button>
+            <button class="buttons" onclick="performSearch('reddit')">Reddit</button>
+            <button class="buttons" onclick="performSearch('lastfm')">Last.fm</button>
+            <button class="buttons" onclick="performSearch('twitch')">Twitch</button>
+            <button class="buttons" onclick="performSearch('weather')">Weather</button>
+            <button class="buttons" onclick="performSearch('gsheets')">Gsheets</button>
           </div>
-      </div>
+        </div>
         <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower" id="greetingMsg"></p>
         <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower" id="clock"></p>
-        <iv class="animate__animated animate__fadeInUp animate__delay-2s animate__slow">
-        <button class="buttons" id="home" style="font-family: monospace; color: rgb(169, 169, 169)" onclick="home()">Home</button>
-      </div>
-
+        <div class="animate__animated animate__fadeInUp animate__delay-2s animate__slow">
+            <button class="buttons" id="home" style="font-family: monospace; color: rgb(169, 169, 169)" onclick="home()">Home</button>
+        </div>
+    </div>
+</body>
 </html>

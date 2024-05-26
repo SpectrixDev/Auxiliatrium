@@ -17,8 +17,9 @@
         <img src="img/Auxiliatrium.png" class="logo" alt="logo" id="logolmao"/>
       </header>
         <div class="searchArea">
-          <input class="search" id="textbox" type="text" placeholder="Search..." onkeydown="if (event.keyCode == 13 || event.which == 13) { performSearch(); }"/>
+          <input class="search" id="textbox" type="text" placeholder="Search or AI query..." onkeydown="if (event.keyCode == 13 || event.which == 13) { performSearch('duckduckgo'); }"/>
           <button class="ai-button" onclick="performSearch('duckduckgoAI')"><i class="fas fa-robot"></i></button>
+
         </div>
         <div class="notselectable">
           <br />
@@ -30,18 +31,19 @@
             <button class="buttons" onclick="performSearch('gmaps')">Gmaps</button>
             <button class="buttons" onclick="performSearch('twitter')">Twitter</button>
           </div>
+          <br />
           <div class="secondRowButtons">
             <button class="buttons" onclick="performSearch('reddit')">Reddit</button>
             <button class="buttons" onclick="performSearch('lastfm')">Last.fm</button>
-            <button class="buttons" onclick="performSearch('twitch')">Twitch</button>
+            <button class="buttons" onclick="performSearch('chatgpt')">ChatGPT</button>
             <button class="buttons" onclick="performSearch('weather')">Weather</button>
-            <button class="buttons" onclick="performSearch('gsheets')">Gsheets</button>
+            <button class="buttons" onclick="performSearch('claude')">Claude</button>
           </div>
         </div>
-        <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower" id="greetingMsg"></p>
-        <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower" id="clock"></p>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower notselectable" id="greetingMsg"></p>
+        <p class="animate__animated animate__fadeInUp animate__delay-1s animate__slower notselectable" id="clock"></p>
         <div class="animate__animated animate__fadeInUp animate__delay-2s animate__slow">
-            <button class="buttons" id="home" style="font-family: monospace; color: rgb(169, 169, 169)" onclick="home()">Home</button>
+            <button class="buttons" id="home" style="font-family: monospace; color: rgb(169, 169, 169)" onclick="window.location.href='https://spectrixdev.github.io/'">Home</button>
         </div>
     </div>
 </body>

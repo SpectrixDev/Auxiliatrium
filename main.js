@@ -20,8 +20,8 @@ const searchEngines = {
         homeUrl: "https://maps.google.com/"
     },
     twitter: {
-        searchUrl: "https://twitter.com/search?q=",
-        homeUrl: "https://twitter.com/"
+        searchUrl: "https://x.com/search?q=",
+        homeUrl: "https://x.com/"
     },
     reddit: {
         searchUrl: (query) => {
@@ -35,26 +35,25 @@ const searchEngines = {
         searchUrl: "https://www.last.fm/search?q=",
         homeUrl: "https://www.last.fm/"
     },
-    twitch: {
-        searchUrl: "https://www.twitch.tv/search?term=",
-        homeUrl: "https://www.twitch.tv/"
+    chatgpt: {
+        searchUrl: "https://chatgpt.com/?q=",
+        homeUrl: "https://chatgpt.com/"
     },
     weather: {
         searchUrl: "https://www.accuweather.com/en/search-locations?query=",
         homeUrl: "https://www.accuweather.com/"
     },
-    gsheets: {
-        searchUrl: "https://docs.google.com/spreadsheets/u/0/?q=",
-        homeUrl: "https://docs.google.com/spreadsheets/u/0/"
+    claude: {
+        searchUrl: "https://claude.ai/chats",
+        homeUrl: "https://claude.ai/chats"
     },
-    home: "https://spectrixdev.github.io/",
     duckduckgo: {
         searchUrl: "https://duckduckgo.com/?q=",
         homeUrl: "https://duckduckgo.com/"
     },
     duckduckgoAI: {
-        searchUrl: "https://duckduckgo.com/?q=",
-        homeUrl: "https://duckduckgo.com/",
+        searchUrl: "https://duckduckgo.com/?ia=chat&q=",
+        homeUrl: "https://duckduckgo.com/?q=DuckDuckGo&ia=chat",
         copyQuery: true
     }
 };

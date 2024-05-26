@@ -1,28 +1,80 @@
 const searchEngines = {
-    youtube: "https://www.youtube.com/results?search_query=",
-    github: "https://github.com/search?q=",
-    gcal: "https://calendar.google.com/calendar/u/0/r/search?q=",
-    gmail: "https://mail.google.com/mail/u/0/#search/",
-    gmaps: "https://maps.google.com/maps?q=",
-    twitter: "https://twitter.com/search?q=",
-    reddit: (query) => query.startsWith("r/") ? `https://www.reddit.com/${query}` : `https://www.reddit.com/search?q=${query}`,
-    lastfm: "https://www.last.fm/search?q=",
-    twitch: "https://www.twitch.tv/search?term=",
-    weather: "https://www.accuweather.com/en/search-locations?query=",
-    gsheets: "https://docs.google.com/spreadsheets/u/0/?q=",
+    youtube: {
+        searchUrl: "https://www.youtube.com/results?search_query=",
+        homeUrl: "https://www.youtube.com/"
+    },
+    github: {
+        searchUrl: "https://github.com/search?q=",
+        homeUrl: "https://github.com/"
+    },
+    gcal: {
+        searchUrl: "https://calendar.google.com/calendar/u/0/r/search?q=",
+        homeUrl: "https://calendar.google.com/calendar/u/0/"
+    },
+    gmail: {
+        searchUrl: "https://mail.google.com/mail/u/0/#search/",
+        homeUrl: "https://mail.google.com/mail/u/0/"
+    },
+    gmaps: {
+        searchUrl: "https://maps.google.com/maps?q=",
+        homeUrl: "https://maps.google.com/"
+    },
+    twitter: {
+        searchUrl: "https://twitter.com/search?q=",
+        homeUrl: "https://twitter.com/"
+    },
+    reddit: {
+        searchUrl: (query) => {
+            const isSubreddit = query.startsWith("r/");
+            const encodedQuery = isSubreddit ? query : encodeURIComponent(query);
+            return isSubreddit ? `https://www.reddit.com/${encodedQuery}` : `https://www.reddit.com/search?q=${encodedQuery}`;
+        },
+        homeUrl: "https://www.reddit.com/"
+    },
+    lastfm: {
+        searchUrl: "https://www.last.fm/search?q=",
+        homeUrl: "https://www.last.fm/"
+    },
+    twitch: {
+        searchUrl: "https://www.twitch.tv/search?term=",
+        homeUrl: "https://www.twitch.tv/"
+    },
+    weather: {
+        searchUrl: "https://www.accuweather.com/en/search-locations?query=",
+        homeUrl: "https://www.accuweather.com/"
+    },
+    gsheets: {
+        searchUrl: "https://docs.google.com/spreadsheets/u/0/?q=",
+        homeUrl: "https://docs.google.com/spreadsheets/u/0/"
+    },
     home: "https://spectrixdev.github.io/",
-    duckduckgo: "https://duckduckgo.com/?q=",
-    duckduckgoAI: "https://duckduckgo.com/?q="
+    duckduckgo: {
+        searchUrl: "https://duckduckgo.com/?q=",
+        homeUrl: "https://duckduckgo.com/"
+    },
+    duckduckgoAI: {
+        searchUrl: "https://duckduckgo.com/?q=",
+        homeUrl: "https://duckduckgo.com/",
+        copyQuery: true
+    }
 };
 
 function performSearch(engine) {
-    const query = encodeURIComponent(document.getElementById('textbox').value);
-    const searchUrl = searchEngines[engine] + query + (engine === 'duckduckgoAI' ? '&ia=chat' : '');
-    
-    if (engine === 'duckduckgoAI') {
-        copyToClipboard(query);
+    const query = document.getElementById('textbox').value;
+    let searchUrl;
+
+    if (query.trim() === '') {
+        searchUrl = searchEngines[engine].homeUrl || searchEngines[engine];
+    } else {
+        searchUrl = typeof searchEngines[engine].searchUrl === 'function'
+            ? searchEngines[engine].searchUrl(query)
+            : searchEngines[engine].searchUrl + encodeURIComponent(query);
+
+        if (searchEngines[engine].copyQuery) {
+            copyToClipboard(query);
+        }
     }
-    
+
     window.location.href = searchUrl;
 }
 

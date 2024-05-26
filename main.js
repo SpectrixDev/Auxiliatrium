@@ -31,9 +31,9 @@ const searchEngines = {
         },
         homeUrl: "https://www.reddit.com/"
     },
-    lastfm: {
-        searchUrl: "https://www.last.fm/search?q=",
-        homeUrl: "https://www.last.fm/"
+    aoty: {
+        searchUrl: "https://www.albumoftheyear.org/search/?q=",
+        homeUrl: "https://www.albumoftheyear.org/"
     },
     chatgpt: {
         searchUrl: "https://chatgpt.com/?q=",

@@ -1,9 +1,13 @@
 
 # **Auxiliatrium**
+
 > My Minimal Custom Home Page 🌐
 
+<p align="center"> <img src="https://github.com/user-attachments/assets/c8212594-3d43-4d91-8f81-6547df8fbff9" alt="image psd"> </p>
+
+
+
 **Preview:** 👉 https://spectrixdev.github.io/Auxiliatrium/
-![image](https://github.com/user-attachments/assets/b251a2b2-74d4-45eb-8f9b-6d409b9841c6)
 
 ## 🎉 Features
 
@@ -18,6 +22,8 @@ Depending on your web browser, the setup will be slightly different.
 1️⃣ Go to your browser's **settings** and set the startup page, home page, and find a suitable plugin/setting to set up the [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Auxiliatrium's URL](https://spectrixdev.github.io/Auxiliatrium/)
 
 2️⃣ That's literally all there is to it. You're all set! 🎉
+
+![image](https://github.com/user-attachments/assets/b251a2b2-74d4-45eb-8f9b-6d409b9841c6)
 
 ## 🤔 Tips:
 

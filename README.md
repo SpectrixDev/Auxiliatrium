@@ -1,35 +1,27 @@
-# Auxiliatrium
-### A custom home page for your browser. Made intentionally for minimalists
 
-> **Preview: https://spectrixdev.github.io/Auxiliatrium/**
+# **Auxiliatrium**
+> My Minimal Custom Home Page 🌐
 
-## Setting up
-Depending on your web browser, the set up wil be slightly different. But it should be pretty much the same
+**Preview:** 👉 https://spectrixdev.github.io/Auxiliatrium/
+![image](https://github.com/user-attachments/assets/b251a2b2-74d4-45eb-8f9b-6d409b9841c6)
 
-Go to your browsers **settings** and set the startup page, home page and [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Auxiliatrium's website](https://spectrixdev.github.io/Auxiliatrium/)
+## 🎉 Features
 
-After that, you're all ready!
+* ⚡️ Quickly visit your favorite websites and search queries instantly
+* 🤔 Query using AI or a search engine seamlessly. As of 22/07/24, DuckDuckGo AI supports GPT-3.5 Turbo, Claude 3 Haiku, Llama 3 70B & Mixtral 8x7B. This will likely change very often.
 
-## Tips:
-> You can click a button without searching for anything and it will take you to that website's homepage
 
-> In the Reddit search, you can do r/{subreddit name here} to go to the desired subreddit
+## 🛠️ Setting up
 
-## Installing the repo locally (unrecommended)
-Clone/install the repo
+Depending on your web browser, the setup will be slightly different.
 
-```bash
-git clone https://github.com/SpectrixDev/Auxiliatrium.git
-```
-or click [here](https://github.com/SpectrixDev/Auxiliatrium/archive/master.zip) to download without using git
+1️⃣ Go to your browser's **settings** and set the startup page, home page, and find a suitable plugin/setting to set up the [new tab page](https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna/) to [Auxiliatrium's URL](https://spectrixdev.github.io/Auxiliatrium/)
 
-Now you can follow the **Setting up** steps and change the url to the location of the index.html file on your compute
+2️⃣ That's literally all there is to it. You're all set! 🎉
 
-## Checking for updates
-Do the following: ```bash
-git pull origin master```
-(make sure you've ```cd```'d into the directory)
+## 🤔 Tips:
 
-or just redownload it
-
-###### pls star the repo b0ss
+* 👉 Click a button without searching for anything, and it will take you to that website's homepage
+* 👉 Clicking a button with text in the search bar, you will get results from that website if possible
+* 👉 For certain buttons such as Reddit you can do `r/{subreddit name here}` to go to the desired subreddit
+* 👉 When clicking the AI button (the robot), the text will be copied to your clipboard. You can then instantly paste it and get your answer. You can also click the top left "search" button on DuckDuckGo to switch from the AI chat to the search results.
